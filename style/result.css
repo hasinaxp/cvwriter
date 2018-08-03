@@ -1,0 +1,182 @@
+
+#page{
+    margin:10px;
+    height: 1100px;
+    width:800px;
+    background-color: white;
+    overflow:hidden;
+}
+.head2{
+    padding-bottom:3px;
+    text-transform:uppercase;
+    color:#93979c;
+}
+.head3{
+    padding-bottom:3px;
+    text-transform:uppercase;
+    color:aliceblue;
+    text-shadow: 1px 1px 3px black;
+}
+
+.name-data{
+    position:absolute;
+    background-color:white;
+    margin-top: 2px;
+    padding:5px;
+    margin-left: 250px;
+    text-align:right;
+    width:500px;
+    color:#35816a;
+}
+#person-name{
+    text-transform:uppercase;
+    font-size: 25px;
+}
+
+.data-wrapper{
+    position:absolute;
+    display:flex;
+    width: 770px;
+    height: 1100px;
+    overflow:hidden;
+}
+.contact-column{
+
+    width:370px;
+    padding:10px;
+    padding-top: 10px;
+    background-color:#74ebc0;
+    color:#126f7c;
+
+}
+.table-personal td{
+    font-size:15px;
+}
+
+
+.contact-data ul{
+    margin-left: 20px;
+    list-style:none;
+}
+.contact-data ul li{
+    padding-bottom: 4px;
+}
+.skill-data{
+    margin-top:150px;
+    margin-left: 20px;
+}
+.skill-container{
+    padding-left: 10px;
+    font-weight:bold;
+}
+
+.main-body{
+    padding:20px;
+    margin-top:20px;
+    color:#4e5052;
+    height: 1035px;
+}
+
+.profile-image{
+    width:200px;
+    height:200px;
+    border:2px solid white;
+    margin-bottom:50px;
+}
+
+.academic-temp{
+    padding:3px;
+    padding-left:20px;
+}
+.academic-temp div{
+    font-size: 16px;
+}
+#n-degree{
+    color:#1591aa;
+    font-size:20px;
+    font-family:monospace;
+    font-weight:bolder;
+    text-transform: uppercase;
+}
+.side-by-side{
+
+    padding-top:30px;
+    padding-bottom:20px;
+}
+.ss{
+    padding-right:70px;
+    padding-bottom:20px;
+}
+.language-container{
+    padding-left: 20px;
+    padding-top:10px;
+    color:#3e888e;
+    font-weight:bold;
+    font-size: 15px;
+}
+.language-container div{
+    padding-bottom: 4px;
+}
+.hobby-container div{
+    padding-bottom: 4px;
+}
+.skill-container div{
+    padding-bottom: 4px;
+}
+
+ .hobby-container{
+     padding-bottom:20px;
+     padding-left:20px;
+     padding-top:10px;
+    color:#3e888e;
+    font-weight:bold;
+    font-size: 15px;
+ }
+ .block-personal{
+     text-transform: uppercase;
+     padding-top:20px;
+     
+ }
+ .table-personal{
+     font-size:14px;
+     color:#778b9c;
+ }
+ .block-academic{
+   padding-top: 10px;
+   overflow:hidden;
+   height:480px; 
+ }
+ .block-disclaimer{
+     padding-top: 10px;
+ }
+  .block-disclaimer div{
+      font-size:15px;
+  }
+ .block-extra{
+     max-height: 200px;
+     min-height: 70px;
+     padding-top: 10px;
+     overflow:hidden;
+ }
+
+ #n-address{
+     font-size: 15px;
+ }
+ #n-email{
+    font-size: 15px;
+}
+
+#n-mobile{
+    font-size: 15px;
+}
+
+
+ #download{
+     position:relative;
+     width:100px;
+     height:40px;
+ }
+ #n-workexp{
+    font-size: 15px;
+ }
+

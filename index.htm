@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="deps/img/icon.ico" />
+        <link rel="stylesheet" href="deps/jui/jquery-ui.min.css" />
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="style/style-desk.css" />
+        <link rel="stylesheet" media="screen and (min-width: 350px) and (max-width: 599px)" href="style/style-mob.css" />
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="style/result.css" />
+        <title>curriculam vitae</title>
+        <script src="deps/jquery-3.2.0.js"></script>
+        <script src="deps/jui/jquery-ui.min.js"></script>
+        <script src="deps/h2c/build/html2canvas.min.js"></script>
+        <script src="deps/jsPDF/dist/jspdf.debug.js"></script>
+        <script src="deps/html2pdf.js"></script>
+        
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class ="header">
+                <div class="title">
+                    <div class="title-name">
+                        <span><h2>curriculam vitae</h2></span>
+                    </div>
+                    <div class="title-description">
+                        <span>write your cv today and get ready for interview</span>
+                    </div>
+                </div><!--end of title -->
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                            <li id="ab"><a  href="#h">about us</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div><!--end of navigation-->
+            </div><!--end of header-->
+            <div class="content">
+                <div class="back">
+                </div>
+                <div class="info" id="inf">
+                    <div id="in1" class="in">
+                        <span><h2>what is cv?</h2></span>
+                        <span>
+                            curriculam vitae is just a piece of small document that tells about you. It contains general informations about you like your name and achievements. <br />
+                            our site helps you to create your cv by just filling a simple form. Try it today.<br />
+                        </span>
+                    </div>
+                    <div id="in2" class="in">
+                        <span><h2>why cv?</h2></span>
+                        <span>
+                            every body needs a cv today. wheather you are an ameture or pro you need a cv. <br />
+                            cv is just a common way to let other people know who you are.<br />
+                        </span>
+                    </div>
+                    <div id="in3" class="in">
+                        <span><h2>when do you need cv</h2></span>
+                        <span>
+                            iny any kind of interview or form fillup you might need to upload your cv. <br />
+                            write your cv today and get ready for interview.<br />
+                        </span>
+                    </div>
+                </div>
+                <div class="cv-form-btn">
+                    <button id="form-btn" class="btn1">start writing</button>
+                </div>
+            </div><!--cotent ends here-->
+
+
+            <div class="info-form" id="about">
+                <div class="close-btn" id="close-btn-about">
+                    <span>x</span>
+                </div>
+                <div class="face">
+                    <div class="disclaimer-container" >
+                        <span>
+                           thanks for using this site. I have used these following librarys for the perpous of this site-
+                           <br /> html2canvas.js 
+                           <br /> jsPDF.js
+                           <br /> html2pdf.js
+                           <br /> jquery-ui
+                           <br /><br /><br />
+                           &nbsp &nbsp &nbsp &nbsp - spandan mondal
+                        </span>
+                    </div>
+                </div><!-- face container ends here -->
+            </div><!--about ends here-->
+
+
+            <!--  00000000000000000000000000000000000000000000000000000000000000000000000000000000-->
+
+            <div class="info-form" id="disclaimer">
+                <div class="close-btn" id="close-btn-disclaimer">
+                    <span>x</span>
+                </div>
+                <div class="face">
+                    <div class="disclaimer-container" >
+                        <span>
+                            please kindly be sure that all your information is safe here. we don't keep or save any of your personal 
+                            information. As soon as you you leave this form all th information will be deleted. So if any-time you make 
+                            any mistake you can just close this form and start everything from the start. <br />
+                            one more thing, it doesn't matter if you use lowercase or uppercase letter. the information will be converted 
+                            to the sutable case.<br /><br />
+                            the information you provide will be taken in four stages. ie. in first stage you need to provide your 
+                            presonal data such as your name, your father's name. in the second stage you need to state your contact 
+                            information. the third stage will take your academic informataion. in the last stage you can give your 
+                            extra stuffs.
+                        </span>
+                    </div>
+                    <div class="disclaimer-action">
+                        <button class="std-btn" id="btn-agree" >continue</button>
+                    </div>
+                </div><!-- face container ends here -->
+            </div><!--disclaimer form ends here-->
+
+
+            <div class="info-form" id="personal-information">
+                <div class="close-btn" id="close-btn-personal">
+                    <span>x</span>
+                </div>
+                <div class="face">
+                    <div class="personal-info-container">
+                        <div class="info-1">
+
+                            <div class="scope-1">
+                                <span>name: </span>
+                                <input type="text" class="text-input" id="i-name" />
+                            </div>
+                            <div class="scope-1">
+                                <span>father's name: </span>
+                                <input type="text" class="text-input" id="i-father-name" />
+                            </div>
+                            <div class="scope-1">
+                                <span>mother's name: </span>
+                                <input type="text" class="text-input" id="i-mother-name" />
+                            </div>
+                            <div class="scope-1">
+                                <span>gender: </span>
+                                <select class="select-input" id="i-gender">
+                                    <option value="male">male</option>
+                                    <option value="female">female</option>
+                                    <option value="other">other</option>
+                                </select>
+                            </div>
+                            <div class="scope-1">
+                                <span>date of birth: </span>
+                                <input type="date" class="date-picker" id="i-dob" />
+                            </div>
+                            <div class="scope-1">
+                                <span>nationality: </span>
+                                <input type="text" class="text-input" id="i-nationality" />
+                            </div>
+                            <div class="scope-1">
+                                <span>religion: </span>
+                                <input type="text" class="text-input" id="i-religion" />
+                            </div>
+                            <div class="scope-1">
+                                <span class="question-1">do you have any cast? </span>
+                                <input type="checkbox" class="check" id="i-check-cast" />
+                            </div>
+                            <div class="scope-1" id="cast-pan">
+                                <span>cast: </span>
+                                <input type="text" class="text-input" id="i-cast" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="personal-action">
+                        <button class="std-btn" id="btn-personal-submit" >next</button>
+                    </div>
+                   
+                </div><!-- face container ends here -->
+            </div><!--personal info form ends here-->
+
+
+            <div class="info-form" id="contact-information">
+                <div class="close-btn" id="close-btn-contact">
+                    <span>x</span>
+                </div>
+                <div class="face">
+                    <div class="contact-info-container">
+                        <div class="info-1">
+
+                            <div class="scope-1">
+                                <span>Current Address: </span>
+                                <textarea wrap="off" cols="50" rows="4" id="i-address" class="text-area"></textarea>
+                            </div>
+                            <div class="scope-1">
+                                <span>phone Number: </span>
+                                <input type="tel" class="text-input" id="i-phone" />
+                            </div>
+                            <div class="scope-1">
+                                <span>email address: </span>
+                                <input type="email" class="text-input" id="i-email" />
+                            </div>
+                            
+                        </div><!--info-1 ends here-->
+                    </div>
+
+                    <div class="contact-action">
+                        <button class="std-btn" id="btn-contact-submit" >next</button>
+                    </div>
+                   
+                </div><!-- face container ends here -->
+            </div><!--contact info form ends here-->
+
+
+            <div class="info-form" id="academic-information">
+                <div class="close-btn" id="close-btn-academic">
+                    <span>x</span>
+                </div>
+                <div class="face">
+                    <div class="academic-info-container">
+                        <div class="info-1">
+
+                            <div class="scope-1">
+                                <div class="degree-container">
+                                    <span>please add your academic information bellow.</span><br />
+                                    <div class='header'>
+                                        <div class='tab-exam' >exam name</div>
+                                        <div class='tab-institute'>institute</div>
+                                        <div class='tab-institute'>board / university</div>
+                                        <div class='tab-year'>passing year</div>
+                                        <div class='tab-marks'>marks / sgpa</div>
+                                    </div>
+                                    <div class="sub-container">
+                                        <div class="degree-holder">
+                                        </div>
+                                        <div class="add-btn-container">
+                                                <button class="std-btn2" id="btn-add" >+ add New</button>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            
+                            
+                        </div><!--info-1 ends here-->
+                    </div>
+
+                    <div class="academic-action">
+                        <button class="std-btn" id="btn-academic-submit" >next</button>
+                    </div>
+                   
+                </div><!-- face container ends here -->
+            </div><!--academic info form ends here-->
+
+            <div class="info-form small-form" id="add-form">
+                <div class="close-btn close-add" id="close-btn-add">
+                    <span>x</span>
+                </div>
+                <div class="face">
+                    <div class="academic-info-container">
+                        <div class="info-1">
+
+                                <div class="scope-1">
+                                    <span>exam name: </span>
+                                    <input type="text" class="text-input" id="i-exam" />
+                                </div>
+                                <div class="scope-1">
+                                    <span>school/college name: </span>
+                                    <input type="text" class="text-input" id="i-school" />
+                                </div>
+                                <div class="scope-1">
+                                    <span>board/university name: </span>
+                                    <input type="text" class="text-input" id="i-board" />
+                                </div>
+                                <div class="scope-1">
+                                    <span>pasing year: </span>
+                                    <input type="number" class="text-input small-input" id="i-year" />
+                                </div>
+                                <div class="scope-1">
+                                    <span>marks/sgpa: </span>
+                                    <input type="text" class="text-input small-input" id="i-marks" />
+                                </div>
+                            
+                            
+                        </div><!--info-1 ends here-->
+                    </div>
+
+                    <div class="add-action">
+                            <button class="std-btn" id="btn-add-submit" >add</button>
+                        </div>
+                    
+                </div><!-- face container ends here -->
+            </div><!--add form ends here-->
+
+            <div class="info-form" id="extra-information">
+                <div class="close-btn" id="close-btn-extra">
+                    <span>x</span>
+                </div>
+                <div class="face">
+                    <div class="extra-info-container">
+                        <div class="info-1">
+                            <span>please use ',' to separate your inputs for Languages and hobbies and extra curricular activities.</span>
+                            
+                            <div class="scope-1 s-large">
+                                <span>Languages known: </span>
+                                <div class="mul-tags lang-tags">
+                                    <div class="container-3" id="con-l" ></div>
+                                    <input type="text" class="inv-input" id="i-lang" />
+                                </div>
+                            </div>
+                            <div class="scope-1 s-large">
+                                <span>hobbies: </span>
+                                
+                                <div class="mul-tags hob-tags">
+                                        <div class="container-3" id="con-h" ></div>
+                                        <input type="text" class="inv-input" id="i-hobby" />
+                                </div>
+                            </div>
+                            <div class="scope-1 s-large">
+                                <span>extra curriculer: </span>
+                                <div class="mul-tags eca-tags">
+                                        <div class="container-3" id="con-e" ></div>
+                                        <input type="text" class="inv-input" id="i-eca" />
+                                </div>
+                            </div>
+                            <div class="scope-1">
+                                <span class="question-1">do you have any work experience? </span>
+                                <input type="checkbox" class="check" id="i-check-workexp" />
+                            </div>
+                            <div class="scope-1" id="workexp-pan">
+                                <span>work experience: </span>
+                                <textarea wrap="soft" cols="50" rows="4" id="i-workexp" class="text-area txt-b"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="extra-action">
+                        <button class="std-btn" id="btn-extra-submit" >Generate</button>
+                    </div>
+                    
+                </div><!-- face container ends here -->
+            </div><!--extra info form ends here-->
+
+            <div class="dynamic-result">
+            
+                <div id="page">
+                    <div class="name-data">
+                        <h1 id="person-name"></h1>
+                        <span>date of birth: </span><span id="n-dob"></span>
+                    </div>
+        
+                    <div class="data-wrapper">
+                        <div class="contact-column">
+                            <div class="profile-image"></div>
+                            <div class="contact-data">
+                                <h2 class="head3">CONTACT</h2>
+                                <div class="data-list1">
+                                    <ul>
+                                        <li id="n-address"></li>
+                                        <li id="n-email"></li>
+                                        <li id="n-mobile"></li>
+                                    </ul>
+                                </div>
+                            </div><!--contact data ends here-->
+                            <div class="block-Extra">
+                                <div class="side-by-side">
+                                    <div class="ss">
+                                        <h2 class="head3">languages known</h2>
+                                        <div class="language-container">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="ss">
+                                        <h2 class="head3">hobbies</h2>
+                                        <div class="hobby-container">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="ss">
+                                            <h2 class="head3">skills</h2>
+                                            <div class="skill-container">
+                                                
+                                            </div>
+                                    </div>   
+                                </div><!--side block ends here-->
+                                            
+                            </div> <!--block extra ends here-->
+        
+                        </div><!--contact column ends here-->
+                
+                
+                        <div class="main-body">
+                            <div class="block-personal">
+                                <h2 class="head2">personal profile</h2>
+                                <table class="table-personal">
+                                    <tr>
+                                        <td>father's name: </td>
+                                        <td id="n-father-name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>mother's name: </td>
+                                        <td id="n-mother-name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gender: </td>
+                                        <td id="n-gender"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>nationality:  </td>
+                                        <td id="n-nationality"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>religion: </td>
+                                        <td id="n-religion"></td>
+                                    </tr>
+                                    <tr id="x-cast">
+                                        <td>cast: </td>
+                                        <td id="n-cast"></td>
+                                    </tr>
+                                </table>
+                                
+                            </div><!--block personal ends here-->
+            
+                            <div class="block-academic">
+                                <h2 class="head2">academic details</h2>
+                                <div class="academic-detail-container">
+                                </div>  <!--academic detail container ends here-->                      
+                            </div> <!--block academic ends here-->
+            
+                            <div class="block-extra">
+                                <h2 class="head2">work experience</h2>
+                                <div id="n-workexp">
+                                    
+                                </div>
+                                
+                            </div> <!--block extra ends here-->
+            
+                            <div class="block-disclaimer">
+                                    <h2 class="head2">disclaimer</h2>
+                                    <div>
+                                            I here by state that, all above stated details and fact are true and valid in my best of knowledge
+                                            and belief. And I undertake to inform you of any changes therein, immediately.
+                                    </div>
+                                    
+                            </div>
+            
+                            <div class="block-signeture">
+                                    <br /><br/><br />
+                                    <span>--------------------------</span><br />
+                                    <span>&nbsp &nbsp &nbsp signeture</span>
+                                    
+                                    
+                            </div>
+            
+            
+            
+                        </div><!--main body ends here-->
+                   
+                   
+                        </div><!--data-wrapper ends here-->
+        
+                </div><!--page ends here-->
+            <div class="dynamic-control">
+                    <button id="download">download</button>
+                    <button id="close-spd"> X </button>
+            </div>
+            </div><!--dynamic result ends here-->
+
+            <div class="footer">
+                <span>for any issue mail at : <a href="chocoboyxp@gmail.com">chocoboyxp@gmail.com</a> or phone :+91 8371919713</span>
+                <span>Copy right: itan private ltd.</span>
+            </div>
+        </div><!--wrapper div ends herer-->
+        <script src="script/main.js"></script>
+        <script src="script/hidden-pannels.js"></script>
+        <script src="script/add.js"></script>
+        <script src="script/tags.js"></script>
+        <script src="script/form-control.js"></script>
+        <script src="script/generate-pdf.js"></script>
+    </body>
+</html>
